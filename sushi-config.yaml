@@ -11,6 +11,7 @@ title: AU Patient Summary Sparked Testing
 description: A FHIR Implementation Guide and supporting artefacts developed specifically for the Sparked Testing Event - AU Patient Summary Stream, scheduled for 24 June 2025.
 
 # The status property corresponds to IG.status. It is used to
+status: draft # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: draft
@@ -64,14 +65,26 @@ contact:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+  index.md:
+    title: Home
+  design.md:
+    title: Design
+    design-generation.md:
+      title: Generation
+    design-capturing-patient-story.md:
+      title: Capturing Patient Story
+    design-persistence.md:
+      title: Persistence
+    design-provenance.md:
+      title: Provenance
+  artifacts.html:
+    title: FHIR Artefacts
+  testing-guidance.md:
+    title: Testing Guidance
+
+
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -97,7 +110,13 @@ contact:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Design:
+    Generation: design-generation.html
+    Capturing Patient Story: design-capturing-patient-story.html
+    Persistence: design-persistence.html
+    Provenance: design-provenance.html
+  FHIR Artefacts: artifacts.html
+  Testing Guidance: testing-guidance.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
