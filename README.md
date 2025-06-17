@@ -1,4 +1,4 @@
-# AU Patient Summary – Sparked Testing Event (June 2025)
+# MHR AU Patient Summary – Sparked Testing Event (June 2025)
 
 This repository contains a FHIR Implementation Guide and supporting artefacts developed specifically for the **Sparked Testing Event – AU Patient Summary Stream**, scheduled for **24 June 2025**.
 
