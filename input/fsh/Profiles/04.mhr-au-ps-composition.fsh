@@ -1,4 +1,4 @@
-Profile: MhrPsComposition
+Profile: MhrAuPsComposition
 Parent: AUPSComposition
 Id: mhr-ps-composition
 Title: "MHR PS Composition"
