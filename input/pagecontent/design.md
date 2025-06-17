@@ -1,0 +1,4 @@
+1. [Generation](design-generation.html): How can MHR enable patients to capture and share their stories in their own voices with healthcare providers?
+2. [Curation of Patient Story](design-capturing-patient-story.html): How will MHR allow patients to capture and share their stories in their own voices and share them with healthcare providers?
+3. [Persistence](design-persistence.html): Should the generated Patient Summary document be persisted in MHR? What are the implications of persisting or not persisting it?
+4. [Provenance](design-provenance.html): How can the sources and original context of information in the Patient Summary be safely and clearly tracked and presented?
