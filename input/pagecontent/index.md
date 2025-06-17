@@ -22,13 +22,30 @@ While in North Queensland, Mia experiences a health issue and visits a local GP.
 
 This enriched summary supports more effective and person-centred care, particularly in situations where the patient is unfamiliar to the provider and continuity of care is limited.
 
+### What the Agency Aims to Achieve from This Testing Event
+
+The Agency is committed to supporting and building upon the important work already undertaken by the Australian digital health community in developing the AU Patient Summary. This testing event is seen as an opportunity to contribute to that collective effort and explore how MHR can further enhance its value.
+
+Through participation in the Sparked Testing event, the Agency seeks to gather early feedback on key design aspects of the Patient Summary concept. In particular, the focus is on:
+
+- **Generation** – How will systems invoke MHR to generate a Patient Summary document.
+- **Patient Story** – How patients can contribute their own narratives, goals, and cultural context.
+- **Persistence** – Whether and how the generated document should be stored within MHR.
+- **Provenance** – How the origin and context of information can be safely and clearly represented.
+
+While the following areas are still evolving internally and are not the main focus of this testing event, the Agency also welcomes feedback on:
+- The algorithm used to generate the Patient Summary from available content.
+- The detailed structure and design of the FHIR profiles, which are expected to align with established community processes.
+
+Please, provide any feedback through the [Github Repository](https://github.com/AuDigitalHealth/sparked-testing/issues) of this Implementation Guide.
+
 ### How to read this guide?
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar. To get the most value from this guide, we recommend the following reading path:
 
 1. Start with [this page](index.html) to familiarise yourself with the business scenario. Much of the content in this guide refers back to it for context and illustration.
 2. There are four key design principles that this guide aims to socialise and get feedback on:
-   1. [Generation](design-generation.html): How can MHR enable patients to capture and share their stories in their own voices with healthcare providers?
+   1. [Generation](design-generation.html): How can users and systems request My Health Record (MHR) to generate a Patient Summary document?
    2. [Curation of Patient Story](design-capturing-patient-story.html): How will MHR allow patients to capture and share their stories in their own voices and share them with healthcare providers?
    3. [Persistence](design-persistence.html): Should the generated Patient Summary document be persisted in MHR? What are the implications of persisting or not persisting it?
    4. [Provenance](design-provenance.html): How can the sources and original context of information in the Patient Summary be safely and clearly tracked and presented?
@@ -37,6 +54,8 @@ This guide is divided into several pages which are listed at the top of each pag
 4. Follow the [guidance](testing-guidance.html) on how to interact with the FHIR server for the purposes of the Sparked Testing event.
 
 > Note: Uploading a Patient Summary document to My Health Record is out of scope for this testing event.
+
+
 
 ### Relationships with other work
 
