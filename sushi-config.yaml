@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: agency.au.ps.sparked.testing
-packageId: agency.au.ps.sparked.testing
-canonical: http://ns.electronichealth.net.au/fhir/au.ps.sparked.testing
-name: AgencyAuPsSparkedTesting
-title: AU Patient Summary Sparked Testing
+id: mhr.au.ps.sparked.testing
+packageId: mhr.au.ps.sparked.testing
+canonical: http://ns.electronichealth.net.au/fhir/mhr/ps/sparked-testing
+name: MhrAuPsSparkedTesting
+title: MHR AU Patient Summary Sparked Testing
 description: A FHIR Implementation Guide and supporting artefacts developed specifically for the Sparked Testing Event - AU Patient Summary Stream, scheduled for 24 June 2025.
 
 # The status property corresponds to IG.status. It is used to
@@ -54,7 +54,7 @@ dependencies:
     version: 2.0.0-draft
     uri: http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core
   hl7.fhir.au.ps: 
-    version: 0.1.0-cibuild
+    version: 0.2.0-cibuild
     uri: http://hl7.org.au/fhir/ps/ImplementationGuide/hl7.fhir.au.ps
   # hl7.fhir.au.core: 
   #   version: 1.0.0
