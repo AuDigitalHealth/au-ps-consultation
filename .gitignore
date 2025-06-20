@@ -4,4 +4,7 @@ Thumbs.db
 /input-cache
 /output
 /temp
+!/output
+/output/*
+!output/full-ig.zip
 /template
