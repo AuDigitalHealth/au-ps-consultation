@@ -11,3 +11,13 @@ Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievemen
 
 // Provenance
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type
+
+// Condition
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+
+// AllergyIntolerance
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+
