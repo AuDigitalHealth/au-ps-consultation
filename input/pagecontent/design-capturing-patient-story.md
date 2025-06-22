@@ -6,7 +6,7 @@ When healthcare professionals have access to patient-expressed insights—whethe
 To support this vision, the Agency is investigating several technical options for capturing and integrating "Patient Story" content into the My Health Record (MHR) ecosystem. One promising approach—relevant to this Testing Event and Implementation Guide—involves enabling patients to annotate the Patient Summary document generated via a FHIR Named Query.
 
 ### Workflow Overview
-- **Generation**: An MHR conformant system invokes the [findContentByPatient Named Query]((OperationDefinition-find-content-by-patient.html)) to generate a Patient Summary document from content stored in MHR. Please, refer to the [Patient Summary generation design page](design-generation.html) for more details.
+- **Generation**: An MHR conformant system invokes the [findContentByPatient Named Query](OperationDefinition-find-content-by-patient.html) to generate a Patient Summary document from content stored in MHR. Please, refer to the [Patient Summary generation design page](design-generation.html) for more details.
 - **Contribution**: The patient is given the opportunity to:
   - Add annotations at the section or entry level of the generated document
   - Tell their personal goals and narrative as part of a dedicated Patient Story section.

@@ -56,6 +56,9 @@ dependencies:
   hl7.fhir.au.ps: 
     version: 0.2.0-cibuild
     uri: http://hl7.org.au/fhir/ps/ImplementationGuide/hl7.fhir.au.ps
+  hl7.fhir.uv.ips: 
+    version: 2.0.0-ballot
+    uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
   # hl7.fhir.au.core: 
   #   version: 1.0.0
   #   uri: http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core
@@ -93,6 +96,12 @@ pages:
     title: FHIR Artefacts
   testing-guidance.md:
     title: Testing Guidance
+  examples.md:
+    title: Examples
+  downloads.md:
+    title: Downloads
+  disclaimers.md:
+    title: Disclaimers
 
 
 
@@ -137,6 +146,9 @@ menu:
     Provenance: design-provenance.html
   FHIR Artefacts: artifacts.html
   Testing Guidance: testing-guidance.html
+  Examples: examples.html
+  Downloads: downloads.html
+  Disclaimers: disclaimers.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
