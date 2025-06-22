@@ -9,7 +9,7 @@ Description: "An example Provenance that tracks a weight loss Goal as part of th
 
 * agent[author].who = Reference(Patient/mhr-au-ps-patient-1)
 
-* agent[custodian].who = Reference(Organization/mhr-au-ps-organization-1)
+* agent[custodian].who = Reference(Organization/au-ps-organization-1)
 
 
 * entity[informationSource].what.type = #Bundle

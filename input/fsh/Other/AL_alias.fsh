@@ -1,6 +1,7 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0203-au = http://terminology.hl7.org.au/CodeSystem/v2-0203
 
 // Patient
 Alias: $ihi-status-1 = https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1
@@ -21,3 +22,11 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
+// Immunization
+Alias: $air-register = https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats
+
+// Observation
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+
+// Composition
+Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason

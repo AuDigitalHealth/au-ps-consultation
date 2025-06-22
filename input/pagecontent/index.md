@@ -50,7 +50,8 @@ This guide is divided into several pages which are listed at the top of each pag
    3. [Persistence](design-persistence.html): Should the generated Patient Summary document be persisted in MHR? What are the implications of persisting or not persisting it?
    4. [Provenance](design-provenance.html): How can the sources and original context of information in the Patient Summary be safely and clearly tracked and presented?
 3. Review the [FHIR Artefacts](artifacts.html) section to understand the technical components, including:
-   1. The use of the [Discover Content by Patient]() named query.
+   1. The use of the [Find Content by Patient](OperationDefinition-find-content-by-patient.html) named query.
+   2. A list of [examples](examples.html) synthesised and used in this Implementation Guide.
 4. Follow the [guidance](testing-guidance.html) on how to interact with the FHIR server for the purposes of the Sparked Testing event.
 
 > Note: Uploading a Patient Summary document to My Health Record is out of scope for this testing event.

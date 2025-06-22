@@ -10,7 +10,7 @@ The current design of the Named Query requires four points of identification for
 
 * version = "0.1.0"
 * name = "findContentByPatient"
-* status = #active
+* status = #draft
 * kind = #query
 * code = #find-content-by-patient
 * resource = #Bundle
