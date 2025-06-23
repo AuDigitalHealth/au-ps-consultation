@@ -1,0 +1,1793 @@
+{
+  "resourceType": "Bundle",
+  "id": "5da46aa9-59a5-4ca3-8a65-447791263b82",
+  "meta": {
+    "profile": [
+      "http://ns.electronichealth.net.au/fhir/mhr/ps/sparked-testing/StructureDefinition/mhr-au-ps-bundle"
+    ]
+  },
+  "identifier": {
+    "system": "http://mhr-operator/fhir/identifier",
+    "value": "c34998f7-3a08-4cd4-8f87-ab100a567366"
+  },
+  "type": "document",
+  "timestamp": "2025-06-23T16:46:09.494+10:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:c060a1b2-eaae-430e-9b06-23da6b6e74e7",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "c060a1b2-eaae-430e-9b06-23da6b6e74e7",
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60591-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "date": "2025-06-23T16:46:09+10:00",
+        "author": [
+          {
+            "reference": "urn:uuid:5da646f4-7dc6-4558-801e-5835b503d71a"
+          }
+        ],
+        "title": "MHR Generated Patient Summary - 23-June-2025 04:46 pm AEST",
+        "custodian": {
+          "reference": "urn:uuid:b78c7d17-8572-41f7-8f90-a920708d3862"
+        },
+        "section": [
+          {
+            "title": "Problems List",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Condition</th><th>Clinical Status</th><th>Verification Status</th><th>Onset</th></tr></thead><tbody><tr><td>Acute appendicitis</td><td>active</td><td>confirmed</td><td>DateTimeType[2011-04-10]</td></tr><tr><td>Type 2 Diabetes</td><td>active</td><td>confirmed</td><td>DateTimeType[2018-03-15]</td></tr><tr><td>Hypertension</td><td>active</td><td>confirmed</td><td>DateTimeType[2022-09-01]</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:4ed7dbbe-b608-46b6-9146-e036fe4e223b"
+              },
+              {
+                "reference": "urn:uuid:1a809b57-ab91-4829-ac13-289394b065c2"
+              },
+              {
+                "reference": "urn:uuid:5ef0f3ac-a2ad-4069-b2ea-afcc2da66cd7"
+              }
+            ]
+          },
+          {
+            "title": "Allergies and Intolerances",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Allergy</th><th>Clinical Status</th><th>Verification Status</th><th>Onset</th></tr></thead><tbody><tr><td>Penicillin</td><td>active</td><td>confirmed</td><td>DateTimeType[2010-01-01]</td></tr><tr><td>Eggs</td><td>active</td><td>confirmed</td><td>DateTimeType[2015-06-01]</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:825b6f11-9d3e-4d7b-948b-76cedca72c3c"
+              },
+              {
+                "reference": "urn:uuid:5a4899f3-1126-49ca-81e5-8f823cc5518a"
+              }
+            ]
+          },
+          {
+            "title": "Medication History",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Type</th><th>Medication</th><th>Status</th><th>Effective/Date</th><th>Dosage</th></tr></thead><tbody><tr><td>MedicationRequest</td><td/><td>active</td><td>Fri Jun 13 00:57:59 AEST 2025</td><td>500 mg orally every 8 hours for 7 days</td></tr><tr><td>MedicationStatement</td><td>Metformin 500mg Tablet</td><td>active</td><td>DateTimeType[2021-05-01]</td><td/></tr><tr><td>MedicationStatement</td><td>Amlodipine 10 mg tablet</td><td>active</td><td>DateTimeType[2024-12-01]</td><td/></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:6c5d51d2-1b3f-44a7-a970-251bdbe23e94"
+              },
+              {
+                "reference": "urn:uuid:223e6847-8650-4648-891d-094ca852726b"
+              },
+              {
+                "reference": "urn:uuid:17508c1c-7d3b-4b71-807b-6e0c75a9e8b4"
+              }
+            ]
+          },
+          {
+            "title": "Immunizations History",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Vaccine Code</th><th>Occurrence Date</th></tr></thead><tbody><tr><td>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|COVAST</td><td>2024-06-12</td></tr><tr><td>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|GNFLU</td><td>2023-04-04</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:d4063996-2e3a-4a7b-903f-9d1033d5ea10"
+              },
+              {
+                "reference": "urn:uuid:3a612e4c-c5c6-4df8-bc60-7aa82d2734bb"
+              }
+            ]
+          },
+          {
+            "title": "Procedure History",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Procedure Code</th><th>Performed Date</th><th>Status</th></tr></thead><tbody><tr><td>http://snomed.info/sct|80146002</td><td>2025-06-13</td><td>completed</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:7d8f73e4-006f-4fe9-9796-9dae74b6b763"
+              }
+            ]
+          },
+          {
+            "title": "Patient Story",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81338-6"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>This is my story as the patient and this is how I would like to tell it.. these are my preferences and needs.. this is my culture and background</div></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:7eeebdbb-a4e6-46cb-a8af-e84cfc5e254c"
+              },
+              {
+                "reference": "urn:uuid:f2725f08-9d83-43d8-95b8-0c6d1999ddaa"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd",
+        "meta": {
+          "profile": [
+            "http://ns.electronichealth.net.au/fhir/mhr/ps/sparked-testing/StructureDefinition/mhr-au-ps-patient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Name:</b> Mia Leanne Banks<br/><b>Date of Birth:</b> 1983-08-25<br/><b>Gender:</b> female</div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/individual-genderIdentity",
+            "extension": [
+              {
+                "url": "value",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "446141000124107",
+                      "display": "Identifies as female gender (finding)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/individual-pronouns",
+            "extension": [
+              {
+                "url": "value",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "LA29519-8",
+                      "display": "she/her/her/hers/herself"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender",
+            "extension": [
+              {
+                "url": "value",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "248152002"
+                    }
+                  ],
+                  "text": "Female"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/ihi-status",
+                "valueCoding": {
+                  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1",
+                  "code": "active"
+                }
+              },
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/ihi-record-status",
+                "valueCoding": {
+                  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1",
+                  "code": "verified",
+                  "display": "verified"
+                }
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NI"
+                }
+              ],
+              "text": "IHI"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+            "value": "8003608333647261"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": "Banks",
+            "given": [
+              "Mia",
+              "Leanne"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0270102724",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "0491574632",
+            "use": "mobile"
+          },
+          {
+            "system": "phone",
+            "value": "0270107520",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "mia.banks@myownpersonaldomain.com"
+          },
+          {
+            "system": "phone",
+            "value": "270107520",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1983-08-25",
+        "address": [
+          {
+            "line": [
+              "50 Sebastien St"
+            ],
+            "city": "Minjary",
+            "state": "NSW",
+            "postalCode": "2720",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5da646f4-7dc6-4558-801e-5835b503d71a",
+      "resource": {
+        "resourceType": "Device",
+        "id": "5da646f4-7dc6-4558-801e-5835b503d71a",
+        "identifier": [
+          {
+            "system": "http://ns.electronichealth.net.au/id/pcehr/paid/1.0",
+            "value": "8003640003000026"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "My Health Record",
+            "type": "manufacturer-name"
+          }
+        ],
+        "owner": {
+          "reference": "urn:uuid:b78c7d17-8572-41f7-8f90-a920708d3862"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b78c7d17-8572-41f7-8f90-a920708d3862",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "b78c7d17-8572-41f7-8f90-a920708d3862",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "XX"
+                }
+              ],
+              "text": "Australian Business Number (ABN)"
+            },
+            "system": "http://hl7.org.au/id/abn",
+            "value": "84425496912"
+          }
+        ],
+        "name": "My Health Record system operator",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "help@digitalhealth.gov.au",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "1300 901 001",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "Level 25, 175 Liverpool Street"
+            ],
+            "city": "Sydney",
+            "state": "NSW",
+            "postalCode": "2000",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4ed7dbbe-b608-46b6-9146-e036fe4e223b",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4ed7dbbe-b608-46b6-9146-e036fe4e223b",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "85189001",
+              "display": "Acute appendicitis"
+            }
+          ],
+          "text": "Acute appendicitis"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "onsetDateTime": "2011-04-10",
+        "note": [
+          {
+            "text": "Problem/Diagnosis Comment goes here."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8b032ff1-274f-43fa-9e78-f84917f5fc21",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "8b032ff1-274f-43fa-9e78-f84917f5fc21",
+        "target": [
+          {
+            "reference": "urn:uuid:4ed7dbbe-b608-46b6-9146-e036fe4e223b"
+          }
+        ],
+        "recorded": "2025-06-13T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984",
+              "display": "Dr. John Doe"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://health-hospital.org.au/cis",
+                "value": "39dad7a9-7d33-40aa-9053-64e8fbaef057"
+              },
+              "display": "Event Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984",
+      "resource": {
+        "resourceType": "Practitioner",
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ],
+              "text": "HPI-I"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+            "value": "8003619900015717"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Doe",
+            "given": [
+              "John"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+61 2 1234 5678",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "123 Health Street"
+            ],
+            "city": "Adelaide",
+            "state": "SA",
+            "postalCode": "5000",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac",
+      "resource": {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                  "code": "NOI",
+                  "display": "National Organisation Identifier"
+                }
+              ],
+              "text": "HPI-O"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+            "value": "8003621566684455"
+          }
+        ],
+        "name": "Health Hospital",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+61 2 9876 5432",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "456 Wellness Avenue"
+            ],
+            "city": "Adelaide",
+            "state": "SA",
+            "postalCode": "5000",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1a809b57-ab91-4829-ac13-289394b065c2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1a809b57-ab91-4829-ac13-289394b065c2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "onsetDateTime": "2018-03-15"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3ed8ce12-775e-41ae-8cb9-430587a5c029",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "3ed8ce12-775e-41ae-8cb9-430587a5c029",
+        "target": [
+          {
+            "reference": "urn:uuid:1a809b57-ab91-4829-ac13-289394b065c2"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://murrabit.org/cis",
+                "value": "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+              },
+              "display": "Shared Health Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a",
+      "resource": {
+        "resourceType": "Practitioner",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ],
+              "text": "HPI-I"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+            "value": "8003616566719020"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Fryer",
+            "given": [
+              "Chau"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a",
+      "resource": {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                  "code": "NOI",
+                  "display": "National Organisation Identifier"
+                }
+              ],
+              "text": "HPI-O"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+            "value": "8003620000030333"
+          }
+        ],
+        "name": "Murrabit Medical Centre",
+        "address": [
+          {
+            "line": [
+              "123 Murray St"
+            ],
+            "city": "Murrabit",
+            "state": "VIC",
+            "postalCode": "3579",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ef0f3ac-a2ad-4069-b2ea-afcc2da66cd7",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "5ef0f3ac-a2ad-4069-b2ea-afcc2da66cd7",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertension"
+            }
+          ],
+          "text": "Hypertension"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "onsetDateTime": "2022-09-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:789bb228-de22-494e-9523-394c61db3bbe",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "789bb228-de22-494e-9523-394c61db3bbe",
+        "target": [
+          {
+            "reference": "urn:uuid:5ef0f3ac-a2ad-4069-b2ea-afcc2da66cd7"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://murrabit.org/cis",
+                "value": "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+              },
+              "display": "Shared Health Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:825b6f11-9d3e-4d7b-948b-76cedca72c3c",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "825b6f11-9d3e-4d7b-948b-76cedca72c3c",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "type": "allergy",
+        "category": [
+          "medication"
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "764146007",
+              "display": "Penicillin"
+            }
+          ],
+          "text": "Penicillin"
+        },
+        "patient": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "onsetDateTime": "2010-01-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7c4952a1-e7f7-4dea-ba7f-32e8ed891812",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "7c4952a1-e7f7-4dea-ba7f-32e8ed891812",
+        "target": [
+          {
+            "reference": "urn:uuid:825b6f11-9d3e-4d7b-948b-76cedca72c3c"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://murrabit.org/cis",
+                "value": "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+              },
+              "display": "Shared Health Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5a4899f3-1126-49ca-81e5-8f823cc5518a",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "5a4899f3-1126-49ca-81e5-8f823cc5518a",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "type": "allergy",
+        "category": [
+          "food"
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "102263004",
+              "display": "Eggs (edible)"
+            }
+          ],
+          "text": "Eggs"
+        },
+        "patient": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "onsetDateTime": "2015-06-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3cff93b0-8deb-4824-bc84-8d1599697bfb",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "3cff93b0-8deb-4824-bc84-8d1599697bfb",
+        "target": [
+          {
+            "reference": "urn:uuid:5a4899f3-1126-49ca-81e5-8f823cc5518a"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://murrabit.org/cis",
+                "value": "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+              },
+              "display": "Shared Health Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c5d51d2-1b3f-44a7-a970-251bdbe23e94",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "6c5d51d2-1b3f-44a7-a970-251bdbe23e94",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "23550011000036101",
+              "display": "Amoxicillin 250 mg capsule"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "authoredOn": "2025-06-13T00:57:59.193356+10:00",
+        "requester": {
+          "reference": "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984",
+          "display": "Dr. John Doe"
+        },
+        "dosageInstruction": [
+          {
+            "text": "500 mg orally every 8 hours for 7 days"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d70c549f-a8cd-4ab5-8452-e1e1df8780fa",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "d70c549f-a8cd-4ab5-8452-e1e1df8780fa",
+        "target": [
+          {
+            "reference": "urn:uuid:6c5d51d2-1b3f-44a7-a970-251bdbe23e94"
+          }
+        ],
+        "recorded": "2025-06-13T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://health-hospital.org.au/cis",
+                "value": "39dad7a9-7d33-40aa-9053-64e8fbaef057"
+              },
+              "display": "Event Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:223e6847-8650-4648-891d-094ca852726b",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "223e6847-8650-4648-891d-094ca852726b",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "23358011000036102",
+              "display": "Metformin hydrochloride 500 mg tablet"
+            }
+          ],
+          "text": "Metformin 500mg Tablet"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "effectiveDateTime": "2021-05-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d0e7e9d6-d33c-4971-8b97-e126028dc410",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "d0e7e9d6-d33c-4971-8b97-e126028dc410",
+        "target": [
+          {
+            "reference": "urn:uuid:223e6847-8650-4648-891d-094ca852726b"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://murrabit.org/cis",
+                "value": "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+              },
+              "display": "Shared Health Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:17508c1c-7d3b-4b71-807b-6e0c75a9e8b4",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "17508c1c-7d3b-4b71-807b-6e0c75a9e8b4",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "23519011000036101",
+              "display": "Amlodipine 10 mg tablet"
+            }
+          ],
+          "text": "Amlodipine 10 mg tablet"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "effectiveDateTime": "2024-12-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:47b764a7-bdbb-467b-b091-faea5258cce6",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "47b764a7-bdbb-467b-b091-faea5258cce6",
+        "target": [
+          {
+            "reference": "urn:uuid:17508c1c-7d3b-4b71-807b-6e0c75a9e8b4"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://murrabit.org/cis",
+                "value": "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+              },
+              "display": "Shared Health Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d4063996-2e3a-4a7b-903f-9d1033d5ea10",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "d4063996-2e3a-4a7b-903f-9d1033d5ea10",
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats",
+              "code": "COVAST",
+              "display": "COVID-19 Vaccine AstraZeneca"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "occurrenceDateTime": "2024-06-12T04:33:34.387886+10:00",
+        "primarySource": true
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a1cbaac9-dcba-4f7f-b7c9-05cee67afead",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "a1cbaac9-dcba-4f7f-b7c9-05cee67afead",
+        "target": [
+          {
+            "reference": "urn:uuid:d4063996-2e3a-4a7b-903f-9d1033d5ea10"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:68b2af90-5d19-4765-960c-01796c7d5fd0"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://air.gov.au",
+                "value": "8BC3406A-B93F-11DE-8A2B-6A1C56D89593"
+              },
+              "display": "Australian Immunisation Register Document"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:68b2af90-5d19-4765-960c-01796c7d5fd0",
+      "resource": {
+        "resourceType": "Device",
+        "meta": {
+          "lastUpdated": "2011-10-20T12:35:00+10:00"
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.36.1.2001.1007.20.8003640003000018",
+            "value": "331cc28f-528a-4362-bd88-83225c7f45f8",
+            "assigner": {
+              "display": "PAI-D"
+            }
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "Software Name",
+            "type": "user-friendly-name"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d",
+      "resource": {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                  "code": "NOI",
+                  "display": "National Organisation Identifier"
+                }
+              ]
+            },
+            "system": "http://ns.electronichealth.net.au/id/pcehr/paio/1.0",
+            "value": "8003640011000059"
+          }
+        ],
+        "name": "Custodian",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0712341234",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "99 Clinician Street"
+            ],
+            "city": "Healthville",
+            "state": "QLD",
+            "postalCode": "5555",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a612e4c-c5c6-4df8-bc60-7aa82d2734bb",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "3a612e4c-c5c6-4df8-bc60-7aa82d2734bb",
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats",
+              "code": "GNFLU",
+              "display": "Generic Influenza"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "occurrenceDateTime": "2023-04-04T04:33:34.387982+10:00",
+        "primarySource": true
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:642a710f-f4c2-4c57-a55c-8b34a96a3a83",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "642a710f-f4c2-4c57-a55c-8b34a96a3a83",
+        "target": [
+          {
+            "reference": "urn:uuid:3a612e4c-c5c6-4df8-bc60-7aa82d2734bb"
+          }
+        ],
+        "recorded": "2025-06-11T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:68b2af90-5d19-4765-960c-01796c7d5fd0"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://air.gov.au",
+                "value": "8BC3406A-B93F-11DE-8A2B-6A1C56D89593"
+              },
+              "display": "Australian Immunisation Register Document"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d8f73e4-006f-4fe9-9796-9dae74b6b763",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "7d8f73e4-006f-4fe9-9796-9dae74b6b763",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "80146002",
+              "display": "Appendectomy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "performedDateTime": "2025-06-13T00:57:59.193311+10:00",
+        "performer": [
+          {
+            "actor": {
+              "reference": "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:74b7a136-c54a-4456-a7c9-e1cc57bed94c",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "74b7a136-c54a-4456-a7c9-e1cc57bed94c",
+        "target": [
+          {
+            "reference": "urn:uuid:7d8f73e4-006f-4fe9-9796-9dae74b6b763"
+          }
+        ],
+        "recorded": "2025-06-13T10:00:00.000+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://health-hospital.org.au/cis",
+                "value": "39dad7a9-7d33-40aa-9053-64e8fbaef057"
+              },
+              "display": "Event Summary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7eeebdbb-a4e6-46cb-a8af-e84cfc5e254c",
+      "resource": {
+        "resourceType": "Goal",
+        "id": "7eeebdbb-a4e6-46cb-a8af-e84cfc5e254c",
+        "lifecycleStatus": "active",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ]
+        },
+        "description": {
+          "text": "lose 10kg"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "expressedBy": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:50b27fcc-bf97-49e4-bfc0-828ffb2b67ce",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "50b27fcc-bf97-49e4-bfc0-828ffb2b67ce",
+        "target": [
+          {
+            "reference": "urn:uuid:7eeebdbb-a4e6-46cb-a8af-e84cfc5e254c"
+          }
+        ],
+        "recorded": "2025-06-11T17:58:33.583+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:5da646f4-7dc6-4558-801e-5835b503d71a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:b78c7d17-8572-41f7-8f90-a920708d3862"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://myportal.org",
+                "value": "23308286-8074-43e1-b58a-8956ad706305"
+              },
+              "display": "Annotated Patient Summary on 11 June 2025 at 05:58 pm AEST"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f2725f08-9d83-43d8-95b8-0c6d1999ddaa",
+      "resource": {
+        "resourceType": "Goal",
+        "id": "f2725f08-9d83-43d8-95b8-0c6d1999ddaa",
+        "lifecycleStatus": "active",
+        "description": {
+          "text": "walk 5km without stopping"
+        },
+        "subject": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        },
+        "expressedBy": {
+          "reference": "urn:uuid:4245c4b7-f4ef-46c9-8c25-7b28c1dc5ccd"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1aecc817-e4b9-4e43-9c8c-1a333c7b9f25",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "1aecc817-e4b9-4e43-9c8c-1a333c7b9f25",
+        "target": [
+          {
+            "reference": "urn:uuid:f2725f08-9d83-43d8-95b8-0c6d1999ddaa"
+          }
+        ],
+        "recorded": "2025-06-11T17:58:33.583+10:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author",
+                  "display": "Author"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:5da646f4-7dc6-4558-801e-5835b503d71a"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "custodian",
+                  "display": "Custodian"
+                }
+              ]
+            },
+            "who": {
+              "reference": "urn:uuid:b78c7d17-8572-41f7-8f90-a920708d3862"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "type": "Bundle",
+              "identifier": {
+                "system": "http://myportal.org",
+                "value": "23308286-8074-43e1-b58a-8956ad706305"
+              },
+              "display": "Annotated Patient Summary on 11 June 2025 at 05:58 pm AEST"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -30,7 +30,7 @@ The use of Provenance in this context raises several important questions:
 - Should multiple Provenance records be created for different levels of granularity (e.g., per element or per resource)?
 - How can we ensure that Provenance remains useful without overwhelming the Patient Summary with metadata?
 - Is it sufficient to rely on the integrity of the MHR infrastructure as a trusted source or is there a need for digital signature or something similar?
-- Is there a need to render any of the content of the Provenance for end users accessing the generated Patient Summary document.
+- Is there a need to render any of the content of the Provenance for end users accessing the generated Patient Summary document?
 
 These are active areas of exploration, and the Agency is keen to ensure that the Provenance model is both **technically sound** and **clinically meaningful**.
 
