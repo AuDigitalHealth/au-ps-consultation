@@ -6,9 +6,9 @@
 
 The Australian Digital Health Agency (the Agency) is exploring opportunities to leverage the wealth of patient data within My Health Record (MHR) to support unplanned continuity of care use cases. One promising approach is the generation of a **Patient Summary document** from MHR content. This document would not only include clinician-authored data but also incorporate a patient-curated story—capturing the individual’s voice, cultural identity, and personal health goals.
 
-This approach aims to enhance the relevance and person-centredness of the summary, ensuring that care providers have access to both clinical and contextual information that may influence care decisions.
+This approach aims to enhance the relevance and person-centeredness of the summary, ensuring that care providers have access to both clinical and contextual information that may influence care decisions.
 
-The Agency acknowledges the significant contributions made by the Australian digital health community in shaping the [AU Patient Summary](https://build.fhir.org/ig/hl7au/au-fhir-ps/). This work provides a strong foundation for the Agency to explore the potential of MHR data in supporting unplanned transition of care.
+The Agency acknowledges the significant contributions made by the Australian digital health community in shaping the [AU Patient Summary](https://build.fhir.org/ig/hl7au/au-fhir-ps/). This work provides a strong foundation for the Agency to explore the potential of MHR data in supporting unplanned continuity of care.
 
 ### Business Scenario
 

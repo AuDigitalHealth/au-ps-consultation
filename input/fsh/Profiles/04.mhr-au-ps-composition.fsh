@@ -1,6 +1,6 @@
 Profile: MhrAuPsComposition
 Parent: AUPSComposition
-Id: mhr-ps-composition
+Id: mhr-au-ps-composition
 Title: "MHR AU PS Composition"
 Description: "This profile constraints [AU PS Composition](https://build.fhir.org/ig/hl7au/au-fhir-ps/StructureDefinition-au-ps-composition.html) to meet the requirements of an MHR generated Patient Summary document."
 

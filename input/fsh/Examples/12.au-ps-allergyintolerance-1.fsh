@@ -1,7 +1,7 @@
 Instance: au-ps-allergyintolerance-1
 InstanceOf: AUPSAllergyIntolerance
 Usage: #example
-Title: "AllergyIntolerance Example for Penicillin"
+Title: "Allergy for Penicillin"
 Description: "An example of an AllergyIntolerance resource for a patient with a penicillin allergy."
 
 * clinicalStatus = $allergyintolerance-clinical#active

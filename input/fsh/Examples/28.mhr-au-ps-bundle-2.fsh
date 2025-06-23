@@ -1,7 +1,7 @@
 Instance: mhr-au-ps-bundle-2
 InstanceOf: MhrAuPsBundle
 Usage: #example
-Title: "MHR Generated Patient Summary - Full Data Example"
+Title: "MHR Generated Patient Summary - All Sparked Testing Sections"
 Description: "An example of a MHR Generated Patient Summary Bundle resource with full data recorded in the sections."
 
 * identifier.system = "http://mhr-operator/fhir/identifier"
@@ -21,9 +21,9 @@ Description: "An example of a MHR Generated Patient Summary Bundle resource with
 * entry[+].fullUrl = "urn:uuid:6b592b51-79f1-4be6-aa03-aced58e0f05d"
 * entry[=].resource = 6b592b51-79f1-4be6-aa03-aced58e0f05d
 * entry[+].fullUrl = "urn:uuid:908ca999-2043-4170-8a01-8fc5058dba2a"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-1
+* entry[=].resource = 908ca999-2043-4170-8a01-8fc5058dba2a
 * entry[+].fullUrl = "urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-2
+* entry[=].resource = 37d77522-89d4-4f47-95a9-6081a21fa48a
 * entry[+].fullUrl = "urn:uuid:6863fadd-3b12-4461-a15d-7703be16d1ba"
 * entry[=].resource = 6863fadd-3b12-4461-a15d-7703be16d1ba
 * entry[+].fullUrl = "urn:uuid:7ebe2954-504f-4f7b-9393-03c16820eb04"
@@ -33,9 +33,9 @@ Description: "An example of a MHR Generated Patient Summary Bundle resource with
 * entry[+].fullUrl = "urn:uuid:8a4bcca9-5425-48fa-ae67-57deca146da3"
 * entry[=].resource = 8a4bcca9-5425-48fa-ae67-57deca146da3
 * entry[+].fullUrl = "urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-3
+* entry[=].resource = b1dd4035-e25a-40c3-b9b5-313021207984
 * entry[+].fullUrl = "urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-4
+* entry[=].resource = 2e3f1312-9809-454a-ab06-7462a8ff5bac
 * entry[+].fullUrl = "urn:uuid:066c227f-f122-4ac7-9a0a-98c01a835551"
 * entry[=].resource = 066c227f-f122-4ac7-9a0a-98c01a835551
 * entry[+].fullUrl = "urn:uuid:0c167284-182e-4152-916b-84efe5ffdf9b"
@@ -61,9 +61,9 @@ Description: "An example of a MHR Generated Patient Summary Bundle resource with
 * entry[+].fullUrl = "urn:uuid:bd2bb60f-023f-49c3-b1cb-444e06b0062d"
 * entry[=].resource = bd2bb60f-023f-49c3-b1cb-444e06b0062d
 * entry[+].fullUrl = "urn:uuid:68b2af90-5d19-4765-960c-01796c7d5fd0"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-5
+* entry[=].resource = 68b2af90-5d19-4765-960c-01796c7d5fd0
 * entry[+].fullUrl = "urn:uuid:38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-6
+* entry[=].resource = 38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d
 * entry[+].fullUrl = "urn:uuid:c4cd03ed-1a5b-47d6-b4d4-33d8f1651cbd"
 * entry[=].resource = c4cd03ed-1a5b-47d6-b4d4-33d8f1651cbd
 * entry[+].fullUrl = "urn:uuid:fb975f97-bde2-4f83-b1d7-c80909c4816b"
@@ -76,10 +76,6 @@ Description: "An example of a MHR Generated Patient Summary Bundle resource with
 * entry[=].resource = fdf56fc0-5088-4f27-99bc-9752a0ed079f
 * entry[+].fullUrl = "urn:uuid:3f6d1b72-0969-4ad9-aefc-fd954050850e"
 * entry[=].resource = 3f6d1b72-0969-4ad9-aefc-fd954050850e
-* entry[+].fullUrl = "urn:uuid:cdcdf6f9-fff3-40ba-9dfc-daa36f86b856"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-7
-* entry[+].fullUrl = "urn:uuid:3573f7f7-b8a1-4e37-ad32-168291dfe1b0"
-* entry[=].resource = Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-8
 * entry[+].fullUrl = "urn:uuid:246510c2-4e9c-4c76-b50d-584ab436c3f9"
 * entry[=].resource = 246510c2-4e9c-4c76-b50d-584ab436c3f9
 * entry[+].fullUrl = "urn:uuid:3d7fa218-ca2a-4b50-8ba4-eb7d71d0ebbf"
@@ -232,9 +228,12 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a)
 * entity.role = #source
-* entity.what = Reference(Bundle/3)
+* entity.what.identifier.system = "http://murrabit.org/cis"
+* entity.what.identifier.value = "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+* entity.what.display = "Shared Health Summary"
+* entity.what.type = "Bundle"
 
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-1
+Instance: 908ca999-2043-4170-8a01-8fc5058dba2a
 InstanceOf: Practitioner
 Usage: #inline
 * identifier.type = $v2-0203#NPI "National provider identifier"
@@ -246,7 +245,7 @@ Usage: #inline
 * name.given = "Chau"
 * name.prefix = "Dr."
 
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-2
+Instance: 37d77522-89d4-4f47-95a9-6081a21fa48a
 InstanceOf: Organization
 Usage: #inline
 * identifier.type = $v2-0203-au#NOI "National Organisation Identifier"
@@ -282,7 +281,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a)
 * entity.role = #source
-* entity.what = Reference(Bundle/3)
+* entity.what.identifier.system = "http://murrabit.org/cis"
+* entity.what.identifier.value = "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+* entity.what.display = "Shared Health Summary"
+* entity.what.type = "Bundle"
 
 Instance: 5856d32b-cc6d-40b2-869a-83ad272cb2ff
 InstanceOf: Condition
@@ -306,9 +308,12 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac)
 * entity.role = #source
-* entity.what = Reference(Bundle/5)
+* entity.what.identifier.system = "http://health-hospital.org.au/cis"
+* entity.what.identifier.value = "39dad7a9-7d33-40aa-9053-64e8fbaef057"
+* entity.what.display = "Event Summary"
+* entity.what.type = "Bundle"
 
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-3
+Instance: b1dd4035-e25a-40c3-b9b5-313021207984
 InstanceOf: Practitioner
 Usage: #inline
 * identifier.use = #official
@@ -330,7 +335,7 @@ Usage: #inline
 * address.postalCode = "5000"
 * address.country = "Australia"
 
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-4
+Instance: 2e3f1312-9809-454a-ab06-7462a8ff5bac
 InstanceOf: Organization
 Usage: #inline
 * identifier.use = #official
@@ -371,7 +376,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a)
 * entity.role = #source
-* entity.what = Reference(Bundle/3)
+* entity.what.identifier.system = "http://murrabit.org/cis"
+* entity.what.identifier.value = "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+* entity.what.display = "Shared Health Summary"
+* entity.what.type = "Bundle"
 
 Instance: f6ae81a0-059d-4cd6-8c5e-e7a32f8cd6f0
 InstanceOf: AllergyIntolerance
@@ -395,7 +403,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a)
 * entity.role = #source
-* entity.what = Reference(Bundle/3)
+* entity.what.identifier.system = "http://murrabit.org/cis"
+* entity.what.identifier.value = "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+* entity.what.display = "Shared Health Summary"
+* entity.what.type = "Bundle"
 
 Instance: 8c4324eb-4331-4d82-8ce4-6e4cfcd93cce
 InstanceOf: MedicationStatement
@@ -416,7 +427,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a)
 * entity.role = #source
-* entity.what = Reference(Bundle/3)
+* entity.what.identifier.system = "http://murrabit.org/cis"
+* entity.what.identifier.value = "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+* entity.what.display = "Shared Health Summary"
+* entity.what.type = "Bundle"
 
 Instance: 40313a72-888d-4e69-bac8-ef4c7701c94e
 InstanceOf: MedicationStatement
@@ -437,7 +451,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:37d77522-89d4-4f47-95a9-6081a21fa48a)
 * entity.role = #source
-* entity.what = Reference(Bundle/3)
+* entity.what.identifier.system = "http://murrabit.org/cis"
+* entity.what.identifier.value = "4b675df9-2b5c-4d99-8bd9-4d3ee5419fc1"
+* entity.what.display = "Shared Health Summary"
+* entity.what.type = "Bundle"
 
 Instance: 73e9c4b1-4211-4576-889d-dbd72c8f8ac8
 InstanceOf: MedicationRequest
@@ -460,7 +477,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac)
 * entity.role = #source
-* entity.what = Reference(Bundle/5)
+* entity.what.identifier.system = "http://health-hospital.org.au/cis"
+* entity.what.identifier.value = "39dad7a9-7d33-40aa-9053-64e8fbaef057"
+* entity.what.display = "Event Summary"
+* entity.what.type = "Bundle"
 
 Instance: 312925e9-52cf-4b94-981c-a714d2431c1f
 InstanceOf: Immunization
@@ -481,9 +501,12 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d)
 * entity.role = #source
-* entity.what = Reference(Bundle/4)
+* entity.what.identifier.system = "http://air.gov.au"
+* entity.what.identifier.value = "8BC3406A-B93F-11DE-8A2B-6A1C56D89593"
+* entity.what.display = "Australian Immunisation Register Document"
+* entity.what.type = "Bundle"
 
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-5
+Instance: 68b2af90-5d19-4765-960c-01796c7d5fd0
 InstanceOf: Device
 Usage: #inline
 * meta.lastUpdated = "2011-10-20T12:35:00+10:00"
@@ -494,7 +517,7 @@ Usage: #inline
 * deviceName.name = "Software Name"
 * deviceName.type = #user-friendly-name
 
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-6
+Instance: 38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d
 InstanceOf: Organization
 Usage: #inline
 * identifier.use = #official
@@ -531,7 +554,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:38cfc8b0-3e1c-44ab-8fca-dbcd1b519a8d)
 * entity.role = #source
-* entity.what = Reference(Bundle/4)
+* entity.what.identifier.system = "http://air.gov.au"
+* entity.what.identifier.value = "8BC3406A-B93F-11DE-8A2B-6A1C56D89593"
+* entity.what.display = "Australian Immunisation Register Document"
+* entity.what.type = "Bundle"
 
 Instance: 049dd919-92a6-4b62-bc18-8d94e2bfa824
 InstanceOf: Procedure
@@ -552,7 +578,10 @@ Usage: #inline
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
 * agent[=].who = Reference(urn:uuid:2e3f1312-9809-454a-ab06-7462a8ff5bac)
 * entity.role = #source
-* entity.what = Reference(Bundle/5)
+* entity.what.identifier.system = "http://health-hospital.org.au/cis"
+* entity.what.identifier.value = "39dad7a9-7d33-40aa-9053-64e8fbaef057"
+* entity.what.display = "Event Summary"
+* entity.what.type = "Bundle"
 
 Instance: fdf56fc0-5088-4f27-99bc-9752a0ed079f
 InstanceOf: Goal
@@ -569,40 +598,14 @@ Usage: #inline
 * target = Reference(urn:uuid:fdf56fc0-5088-4f27-99bc-9752a0ed079f)
 * recorded = "2025-06-11T17:58:33.583+10:00"
 * agent[0].type = $provenance-participant-type#author "Author"
-* agent[=].who = Reference(urn:uuid:cdcdf6f9-fff3-40ba-9dfc-daa36f86b856)
+* agent[=].who = Reference(urn:uuid:edbf8fb3-27c0-4ea6-9691-c97669ee27d1)
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
-* agent[=].who = Reference(urn:uuid:3573f7f7-b8a1-4e37-ad32-168291dfe1b0)
+* agent[=].who = Reference(urn:uuid:60eaf0b8-bea0-4a87-bbf3-08985c41e640)
 * entity.role = #source
-* entity.what = Reference(Bundle/6)
-
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-7
-InstanceOf: Device
-Usage: #inline
-* identifier.system = "http://ns.electronichealth.net.au/id/pcehr/paid/1.0"
-* identifier.value = "8003640003000026"
-* deviceName.name = "My Health Record"
-* deviceName.type = #manufacturer-name
-* owner = Reference(urn:uuid:3573f7f7-b8a1-4e37-ad32-168291dfe1b0)
-
-Instance: Inline-Instance-for-ebe9dd8e-7368-4409-b78e-64635f047051-8
-InstanceOf: Organization
-Usage: #inline
-* identifier.type = $v2-0203#XX
-* identifier.type.text = "Australian Business Number (ABN)"
-* identifier.system = "http://hl7.org.au/id/abn"
-* identifier.value = "84425496912"
-* name = "My Health Record system operator"
-* telecom[0].system = #email
-* telecom[=].value = "help@digitalhealth.gov.au"
-* telecom[=].use = #work
-* telecom[+].system = #phone
-* telecom[=].value = "1300 901 001"
-* telecom[=].use = #work
-* address.line = "Level 25, 175 Liverpool Street"
-* address.city = "Sydney"
-* address.state = "NSW"
-* address.postalCode = "2000"
-* address.country = "AU"
+* entity.what.identifier.system = "http://myportal.org"
+* entity.what.identifier.value = "23308286-8074-43e1-b58a-8956ad706305"
+* entity.what.display = "Annotated Patient Summary on 11 June 2025 at 05:58 pm AEST"
+* entity.what.type = "Bundle"
 
 Instance: 246510c2-4e9c-4c76-b50d-584ab436c3f9
 InstanceOf: Goal
@@ -618,8 +621,11 @@ Usage: #inline
 * target = Reference(urn:uuid:246510c2-4e9c-4c76-b50d-584ab436c3f9)
 * recorded = "2025-06-11T17:58:33.583+10:00"
 * agent[0].type = $provenance-participant-type#author "Author"
-* agent[=].who = Reference(urn:uuid:cdcdf6f9-fff3-40ba-9dfc-daa36f86b856)
+* agent[=].who = Reference(urn:uuid:edbf8fb3-27c0-4ea6-9691-c97669ee27d1)
 * agent[+].type = $provenance-participant-type#custodian "Custodian"
-* agent[=].who = Reference(urn:uuid:3573f7f7-b8a1-4e37-ad32-168291dfe1b0)
+* agent[=].who = Reference(urn:uuid:60eaf0b8-bea0-4a87-bbf3-08985c41e640)
 * entity.role = #source
-* entity.what = Reference(Bundle/6)
+* entity.what.identifier.system = "http://myportal.org"
+* entity.what.identifier.value = "23308286-8074-43e1-b58a-8956ad706305"
+* entity.what.display = "Annotated Patient Summary on 11 June 2025 at 05:58 pm AEST"
+* entity.what.type = "Bundle"
