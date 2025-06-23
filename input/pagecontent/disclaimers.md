@@ -6,7 +6,7 @@
 
 {% include disclaimers-document_control.md %}
 
-### Copyright © 2024 Australian Digital Health Agency
+### Copyright © 2025 Australian Digital Health Agency
 
 {% include disclaimers-adha.md %}
 

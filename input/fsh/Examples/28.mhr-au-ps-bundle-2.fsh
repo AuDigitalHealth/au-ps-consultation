@@ -566,7 +566,7 @@ Usage: #inline
 * code = $sct#80146002 "Appendectomy"
 * subject = Reference(urn:uuid:d5f2a548-915b-499c-8927-05e6b0b91e9a)
 * performedDateTime = "2025-06-13T00:57:59.193311+10:00"
-* performer.actor = Reference(urn:uuid:87b8654f-0491-45ef-ba17-7149f889dc34) "Dr. John Doe"
+* performer.actor = Reference(urn:uuid:b1dd4035-e25a-40c3-b9b5-313021207984) "Dr. John Doe"
 
 Instance: 562569c4-6127-4217-9369-0328aed50ae3
 InstanceOf: Provenance

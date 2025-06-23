@@ -7,13 +7,11 @@ This page provides guidance for participants in the Sparked Testing Event, inclu
 ### Key Artefacts
 
 1. **Agency FHIR Test Server**  
-   A demo FHIR server has been provisioned specifically for this testing event:  
-   👉 https://agency-sparked-testing.com/fhir/  
-   This server is intended to support testing of the [FindContent By Patient](OperationDefinition-find-content-by-patient.html)Named Query.  
+   A demo FHIR server has been provisioned specifically for this testing event: [https://agency-sparked-testing.com/fhir/](). This server is intended to support testing of the [FindContent By Patient](OperationDefinition-find-content-by-patient.html) Named Query.  
    > ⚠️ Please note: This is a **temporary test server**. It may be unavailable at times, and no conclusions should be drawn about the Agency’s future direction based on its configuration.
 
 2. **Postman Collection**  
-   A Postman collection is available in the GitHub repository associated with this Implementation Guide. It can be accessed from . The collection provides example requests and workflows to support testing activities.
+   A Postman collection is available in the GitHub repository associated with this Implementation Guide. It can be accessed from [https://github.com/AuDigitalHealth/sparked-testing/tree/main/Postman%20Collection](). The collection provides example requests and workflows to support testing activities.
 
 3. **IPS Viewer**
    The [IPS Viewer](https://www.ipsviewer.com/) can be a very useful tool to render the generated MHR Patient Summary document. Make sure you copy the `document` Bundle within the resulting `searchset` Bundle from the Named Query.

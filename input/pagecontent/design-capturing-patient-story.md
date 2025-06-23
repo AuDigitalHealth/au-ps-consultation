@@ -1049,7 +1049,7 @@ There are a few points worth consideration in this model
 
 1. The composition.author and composition.custodian in the annotated Patient Summary document continue to reference My Health Record and My Health Record Operator.
    
-2. Patient annotations are tracked at the section level via [Composition.section.extension:section-note](StructureDefinition-mhr-ps-composition-definitions.html#Composition.section.extension:section-note), and on at the entry level via [Composition.section.entry.extension:entry-note](StructureDefinition-mhr-ps-composition-definitions.html#Composition.section.entry.extension:entry-note). While the [Extension: Note](https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-note.html) is already defined, it has not been adopted by the IPS or AU PS at the section.entry level. Additionally, systems are expected to render these annotations, although there are currently no defined "Must Support" flags or formal obligations associated with them.
+2. Patient annotations are tracked at the section level via `Composition.section.extension:section-note`, and on at the entry level via `Composition.section.entry.extension:entry-note`. While the [Extension: Note](https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-note.html) is already defined, it has not been adopted by the IPS or AU PS at the section.entry level. Additionally, systems are expected to render these annotations, although there are currently no defined "Must Support" flags or formal obligations associated with them.
 
 3. The Patient Story section includes an author field (section.author) that references the patient.
 
