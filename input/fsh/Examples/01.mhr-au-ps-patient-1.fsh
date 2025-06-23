@@ -54,4 +54,4 @@ Description: "An example Patient who is a subject of an MHR generated Patient Su
 * address.city = "Minjary"
 * address.state = "NSW"
 * address.postalCode = "2720"
-* address.country = "AU"
+* address.country = "Australia"

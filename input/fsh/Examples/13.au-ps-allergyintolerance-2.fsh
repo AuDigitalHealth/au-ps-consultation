@@ -1,6 +1,9 @@
 Instance: au-ps-allergyintolerance-2
 InstanceOf: AUPSAllergyIntolerance
 Usage: #example
+Title: "Allergy for Eggs"
+Description: "This AllergyIntolerance instance represents a confirmed allergy to eggs for a patient."
+
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
 * type = #allergy
