@@ -1,10 +1,4 @@
-The Agency has been exploring options to design an efficient and open-ended framework for discovering health information. One candidate that the Agency see a lot of potential in is the [FHIR Named Queries](https://hl7.org/fhir/R4/search.html#query). There are multiple benefits for FHIR Named Queries that include:
-- They are predefined paramterised queries so they allow complex discvoery logic to be encapsulated and abstratcted from systems executing them.
-- They give control on how/ what data to expose by the custodian of the data
-- They can sit on a facad on top of multiple FHIR and non-FHIR repositories and allow a FHIR compliant way for interacting with all of the repositories
-- A well-thought and well-designed named query can allow open-ended extended discovery pattern where the client system don't need to change to disover and render new content type. Please refer to OperationDefinition-discover-content-by-patient.html for some practical examples
-
-The Agency has been actively exploring options to design an efficient, scalable, and open-ended framework for discovering health information across diverse systems. One promising candidate is the use of [FHIR Named Queries](https://hl7.org/fhir/R4/search.html#query), which offer a flexible and powerful mechanism for data discovery.
+The Agency has been actively exploring options to design an secure and scalable framework for discovering health information with MHR. One promising candidate is the use of [FHIR Named Queries](https://hl7.org/fhir/R4/search.html#query), which offer a flexible and powerful mechanism for data discovery.
 
 FHIR Named Queries provide several key benefits:
 

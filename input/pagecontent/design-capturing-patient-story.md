@@ -3,7 +3,7 @@ The Agency continually seeks opportunities to support patients in taking a more 
 When healthcare professionals have access to patient-expressed insights—whether spoken, written, or otherwise conveyed—it can enrich clinical decision-making, foster empathy, and contribute to better health outcomes. The Agency is actively exploring practical ways to bring this vision to life.
 
 ### Technical Exploration
-To support this vision, the Agency is investigating several technical options for capturing and integrating "Patient Story" content into the My Health Record (MHR) ecosystem. One promising approach—relevant to this Testing Event and Implementation Guide—involves enabling patients to annotate the Patient Summary document generated via a FHIR Named Query.
+To support this vision, the Agency is investigating several technical options for capturing and integrating "Patient Story" content into MHR. One promising approach—relevant to this Implementation Guide—involves enabling patients to annotate the Patient Summary document generated via a FHIR Named Query.
 
 ### Workflow Overview
 - **Generation**: An MHR conformant system invokes the [findContentByPatient Named Query](OperationDefinition-find-content-by-patient.html) to generate a Patient Summary document from content stored in MHR. Please, refer to the [Patient Summary generation design page](design-generation.html) for more details.

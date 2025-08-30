@@ -27,7 +27,7 @@ The current design includes four main components:
 The use of Provenance in this context raises several important questions:
 
 - How should authorship be handled when both the document and the resource have authors?
-- Should multiple Provenance records be created for different levels of granularity (e.g., per element or per resource)?
+- Should multiple Provenance records be created for different levels of granularity of tracking sources of data (e.g., per document or per resource within a document)?
 - How can we ensure that Provenance remains useful without overwhelming the Patient Summary with metadata?
 - Is it sufficient to rely on the integrity of the MHR infrastructure as a trusted source or is there a need for digital signature or something similar?
 - Is there a need to render any of the content of the Provenance for end users accessing the generated Patient Summary document?

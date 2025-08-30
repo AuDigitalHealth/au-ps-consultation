@@ -69,6 +69,12 @@ The current design of the Named Query requires four points of identification for
 * parameter[=].type = #string
 * parameter[=].searchType = #composite
 
+* parameter[+].name = #smart-link
+* parameter[=].use = #in
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Optional boolean parameter to enable SMART Health Link generation. When set to true, the generated Patient Summary document will be stored in a repository and a SMART Health Link will be created for sharing. This is experimental functionality for connectathon testing purposes."
+* parameter[=].type = #boolean
 
 * parameter[+].name = #return
 * parameter[=].use = #out
