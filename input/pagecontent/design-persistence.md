@@ -1,6 +1,6 @@
 ### Document Persistence
 
-The **MHR-generated Patient Summary document** is not currently designed to be persisted. Instead, it is intended to be generated **on demand**, using the most up-to-date information available in My Health Record (MHR) at the time of access.
+The **MHR-generated Patient Summary document** is not currently designed to be persisted. Instead, it is intended to be generated **on demand**, using the most up-to-date information available in MHR at the time of access.
 
 Persisting the generated document introduces several risks and complexities. For example:
 
@@ -10,7 +10,7 @@ Persisting the generated document introduces several risks and complexities. For
 
 Despite these concerns, it is acknowledged that **clinical decisions may be made** based on a generated Patient Summary. In such cases, maintaining a **reference to the version used** could be important for clinical audit, medico-legal purposes, or continuity of care.
 
-This presents a **tricky balance** between data integrity, privacy, and clinical utility.
+This presents a **challenging balance** between data integrity, privacy, and clinical utility.
 
 ### Potential Approaches
 

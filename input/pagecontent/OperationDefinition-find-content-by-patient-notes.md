@@ -50,6 +50,20 @@ curl -X GET [base]/Bundle?_query=findContentByPatient \
   &section-lookback=http://loinc.org%7C11369-6$2023-01-01,http://loinc.org%7C47519-4$2020-01-01,http://loinc.org%7C81338-6
 ```
 
+#### How to Invoke the Named Query - With SMART Health Link Generation
+
+To generate a SMART Health Link for sharing the Patient Summary, add the `smart-link` parameter set to `true`. This will store the document in a repository and return a SMART Health Link.
+
+```curl
+curl -X GET [base]/Bundle?_query=findContentByPatient \
+  &patient.identifier=http%3A%2F%2Fns.electronichealth.net.au%2Fid%2Fhi%2Fihi%2F1.0%7C8003608333647261 \
+  &patient.family=Banks \
+  &patient.birthdate=1983-08-25 \
+  &patient.gender=female \
+  &content-code=http://loinc.org%7C60591-5 \
+  &smart-link=true
+```
+
 #### Scenario: Patient Not Found
 
 If the patient is unknown to the FHIR server—meaning no patient matches the four points of identification provided in the Named Query—the server will respond with an empty `searchset` Bundle. Here's an example:

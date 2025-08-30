@@ -3,12 +3,12 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: mhr.au.ps.sparked.testing
-packageId: mhr.au.ps.sparked.testing
-canonical: http://ns.electronichealth.net.au/fhir/mhr/ps/sparked-testing
-name: MhrAuPsSparkedTesting
-title: MHR AU Patient Summary Sparked Testing
-description: A FHIR Implementation Guide and supporting artefacts developed specifically for the Sparked Testing Event - AU Patient Summary Stream, scheduled for 24 June 2025.
+id: mhr.au.ps.consultation
+packageId: mhr.au.ps.consultation
+canonical: http://ns.electronichealth.net.au/fhir/mhr/au-ps/consultation
+name: MhrAuPsConsultation
+title: MHR AU Patient Summary Consultation
+description: A FHIR Implementation Guide and supporting artefacts developed by the Australian Digital Health Agency specifically for consultation purposes.
 
 # The status property corresponds to IG.status. It is used to
 status: draft # draft | active | retired | unknown
@@ -74,6 +74,8 @@ dependencies:
 pages:
   index.md:
     title: Home
+  business-scenario.md:
+    title: Business Scenario
   design.md:
     title: Design
     design-generation.md:
@@ -84,6 +86,8 @@ pages:
       title: Persistence
     design-provenance.md:
       title: Provenance
+    design-access.md:
+      title: Access
   artifacts.html:
     title: FHIR Artefacts
   testing-guidance.md:
@@ -131,11 +135,13 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Business Scenario: business-scenario.html
   Design:
     Generation: design-generation.html
     Capturing Patient Story: design-capturing-patient-story.html
     Persistence: design-persistence.html
     Provenance: design-provenance.html
+    Access: design-access.html
   FHIR Artefacts: artifacts.html
   Testing Guidance: testing-guidance.html
   Examples: examples.html

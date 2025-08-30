@@ -1,1 +1,0 @@
-<p style="color:#ff0000">This Implementation Guide and its contents are not official guidance, recommendations, or standards from the Australian Digital Health Agency. They are intended solely for the purposes of the Sparked Testing event. No conclusions should be drawn about the Agency’s future development plans, product roadmap, or policy direction based on this content.</p>
