@@ -139,3 +139,60 @@ The Agency seeks feedback on:
 - What security concerns should be prioritised?
 - How should patient control over sharing be implemented?
 - What are the key requirements for provider-facing applications?
+
+
+### Sharing the Patient Summary
+
+*This flow demonstrates the user interaction pattern for generating, contributing to, and sharing a Patient Summary.*
+
+```mermaid
+sequenceDiagram
+    actor Patient
+    participant App as MHR Conformant App
+    participant MHR as MHR FHIR Endpoint
+    participant SHL as SHL Management Service (new NI)
+    participant repo as Patient Summary Repository (new NI)
+
+    Patient->>App: Begin telling my story
+    App->>MHR: Generate MHR AU PS
+    MHR-->>App: MHR AU PS
+    Patient->>App: Add annotations on section & entry level
+    Patient->>App: Add narrative and add goals
+    Patient->>App: Share my story (password + expiry)
+    App->>SHL: Generate SHL (Bundle + password + expiry)
+    SHL->>SHL: Encrypt Patient Summary document
+    SHL->>repo: Store Patient Summary document
+    repo->>SHL: Return document reference
+    SHL->>SHL: Generate SHL
+    SHL->>App: Return SHL
+
+    App->>Patient: Display shareable link
+```
+
+### Accessing the Patient Summary
+
+*This flow shows how a healthcare provider accesses a shared Patient Summary.*
+
+```mermaid
+sequenceDiagram
+    actor Provider as Healthcare Provider
+    participant Viewer as SHL Viewer App (kre8it)
+    participant SHL as SHL Management Service (new NI)
+    participant Auth as National Authorisation Service (new NI)
+    participant Repository as Patient Summary Repository (new NI)
+
+    Provider->>Viewer: Open SMART Health Link
+    Viewer->>SHL: Validate SMART Health Link
+    SHL->>Viewer: Return validated document reference
+    Viewer->>Auth: Request access authorisation
+    Auth->>Auth: Validate provider credentials
+    Auth->>Viewer: Return access token/approval
+    Viewer->>Repository: Request Patient Summary document (with token & reference)
+    Repository->>Repository: Validate access token
+    Repository->>Viewer: Return encrypted Patient Summary
+    Viewer->>Viewer: Decrypt Patient Summary
+    Viewer->>Provider: Display Patient Summary
+```
+
+
+During the September 2025 AU Patient Summary Connectathon, basic interoperability testing was conducted using the kre8it SHL Management Service for SMART Health Link generation and viewing. This testing demonstrated the fundamental technical feasibility of the proposed sharing pattern within a controlled connectathon environment.
