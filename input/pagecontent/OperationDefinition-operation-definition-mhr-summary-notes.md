@@ -29,12 +29,12 @@ Specifies sections to exclude from the summary.
 - Only optional sections can be excluded
 - Bound to excludable sections value set
 
-#### context (required)
+#### context (optional)
 
 Specifies the clinical context for summary generation.
 
 - Type: CodeableConcept
-- Helps tailor content to specific use cases
+- Helps tailor content to specific use cases based on predefined clinically approved algorithm
 - Bound to summary context value set
 
 ### Example Request

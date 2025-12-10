@@ -2,7 +2,7 @@ Instance: operation-definition-mhr-summary
 InstanceOf: OperationDefinition
 Title: "MHR Summary"
 Usage: #definition
-Description: "This operation generates an **MHR Patient Summary document** from the My Health Record (MHR) system. The generated summary is structured according to the Australian Patient Summary (AU PS) standards, ensuring interoperability and consistency in clinical information exchange. The generated summary is meant to server as a starting point for clinicians to author their own patient summaries to support any use case. This operation extends the [IPS Summary OperationDefinition](http://hl7.org/fhir/OperationDefinition/ips-summary) by adding Australian-specific parameters and tailoring the content to align with the requirements of the My Health Record system."
+Description: "This operation generates an **MHR Patient Summary document** from the My Health Record (MHR) system. Only HTTP POST is supported due to security and data integrity considerations. The generated summary is structured according to the Australian Patient Summary (AU PS) standards, ensuring interoperability and consistency in clinical information exchange. The generated summary is meant to server as a starting point for clinicians to author their own patient summaries to support any use case. This operation extends the [IPS Summary OperationDefinition](http://hl7.org/fhir/OperationDefinition/ips-summary) by adding Australian-specific parameters and tailoring the content to align with the requirements of the My Health Record system."
 
 * name = "MhrSummary"
 * status = #active
@@ -22,6 +22,13 @@ Description: "This operation generates an **MHR Patient Summary document** from 
 * parameter[=].max = "1"
 * parameter[=].documentation = "The identifier SHALL be a valid IHI that includes both the system and value components(e.g. http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608166690003)."
 * parameter[=].type = #Identifier
+
+* parameter[+].name = #profile
+* parameter[=].use = #in
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Specifies the profile to be used for the generated summary document. Only AU PS profile is supported for now. If not provided, the default AU PS profile will be used. In the future, IPS profile may be supported as well."
+* parameter[=].type = #canonical
 
 * parameter[+].name = #section-beginDate
 * parameter[=].use = #in
@@ -54,7 +61,7 @@ Description: "This operation generates an **MHR Patient Summary document** from 
 
 * parameter[+].name = #context
 * parameter[=].use = #in
-* parameter[=].min = 1
+* parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Specifies the clinical context for summary generation. This helps tailor the content and presentation of the summary to specific use cases such as emergency care, patient generated, specialist referral, or chronic disease management."
 * parameter[=].type = #CodeableConcept
